@@ -1,0 +1,31 @@
+{
+  "name": "LIRI-Node-App",
+  "version": "1.0.0",
+  "description": "",
+  "main": "LIRI.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kimkchau/LIRI-Node-App.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kimkchau/LIRI-Node-App/issues"
+  },
+  "homepage": "https://github.com/kimkchau/LIRI-Node-App#readme",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "bandsintown": "^1.0.1",
+    "dotenv": "^8.0.0",
+    "fs": "0.0.1-security",
+    "inquirer": "^6.4.1",
+    "moment": "^2.24.0",
+    "node-spotify-api": "^1.1.1",
+    "omdb": "^0.8.0",
+    "spotify": "^0.3.0"
+  }
+}
