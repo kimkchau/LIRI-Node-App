@@ -10,14 +10,13 @@ var keys = require("./keys");
 // to access the keys informaiton in Spotify
 var spotify = new Spotify(keys.spotify);
 
+// npm Node Packages:
 var axios = require("axios");
-
 var fs = require("fs");
-
 var moment = require('moment');
-
 var inquirer = require('inquirer');
 
+// Global variable:
 var userchoices = "";
 
 
@@ -122,7 +121,8 @@ function axiosCaller(answer) {
             });
 
         }
-        // When the user type in a name of a movie, it will display the info of the specific movie
+
+        // When the user types in a name of a movie, it will display the info of the specific movie
         else {
             axios({
                 method: "GET",
@@ -228,28 +228,19 @@ function axiosCaller(answer) {
                 console.log(err);
                 throw err;
             };
-            // console.log(data);
-            // splits the data from the random.txt file  at "," and puts it in an array
+            
+            // splits the data from the random.txt file at "," and puts it in an array
             var array = data.split(",");
-            // console.log(array);
-
+            
             // assigns the array variable at index of 0 to the variable unserchoices
             userchoices = array[0];
+            
             // assigns the array variable at index of 0 to the variable unserchoices
             var userchoice = array[1].replace(" ", "+");
+            
             axiosCaller(userchoice);
         });
-
-
-
-
-
-
-
-
     }
-
-
 }
 
 
