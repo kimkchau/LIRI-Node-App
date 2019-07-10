@@ -33,7 +33,7 @@ Node.js must be installed on the computer.  See https://nodejs.org/en/download/ 
 1. In addition to logging the data in the Terminal, the data is also appended to "log.txt" file
 
 ## Testing
-Using Visual Studio Code and Terminal, LIRI was executed with various scenarios.  Please refer to the video for a demonstration, https://github.com/kimkchau/LIRI-Node-App/blob/master/liri.mov
+Using Visual Studio Code and Terminal, LIRI was executed with various scenarios.  Please refer to the video for a demonstration, https://youtu.be/tVVcKrdv6Ec
 
 ## Deployment
 Navigate to https://github.com/kimkchau/LIRI-Node-App to clone.

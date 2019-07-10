@@ -62,14 +62,14 @@ function axiosCaller(answer) {
 
             // modify jsonDate info to "MM/DD/YYYY" format with moment
             var date = moment(jsonData.datetime).format("L");
-        
+
             // concertData will print to the console
             var concertData = [
                 "\nConcert Info: ",
                 "\nArtist/Band: " + jsonData.lineup,
                 "\nVenue: " + jsonData.venue.name,
                 "\nLocation: " + jsonData.venue.city + ", " + jsonData.venue.country,
-                "\nDate: " + date +"\n",
+                "\nDate: " + date + "\n",
             ].join("\n");
 
             // Append concertData and the divider to log.txt, print concertData to the console
@@ -117,9 +117,7 @@ function axiosCaller(answer) {
                     if (err) throw err;
                     console.log(movieData);
                 });
-
             });
-
         }
 
         // When the user types in a name of a movie, it will display the info of the specific movie
@@ -228,16 +226,16 @@ function axiosCaller(answer) {
                 console.log(err);
                 throw err;
             };
-            
+
             // splits the data from the random.txt file at "," and puts it in an array
             var array = data.split(",");
-            
+
             // assigns the array variable at index of 0 to the variable unserchoices
             userchoices = array[0];
-            
+
             // assigns the array variable at index of 0 to the variable unserchoices
             var userchoice = array[1].replace(" ", "+");
-            
+
             axiosCaller(userchoice);
         });
     }
