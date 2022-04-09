@@ -23,7 +23,7 @@
     "dotenv": "^8.0.0",
     "fs": "0.0.1-security",
     "inquirer": "^6.4.1",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "node-spotify-api": "^1.1.1",
     "omdb": "^0.8.0",
     "spotify": "^0.3.0"
